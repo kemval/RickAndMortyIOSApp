@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+/// controler to show various app options and settings
 final class RMSettingsViewController: UIViewController {
 
     override func viewDidLoad() {
