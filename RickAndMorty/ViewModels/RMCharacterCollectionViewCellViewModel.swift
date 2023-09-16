@@ -11,6 +11,8 @@ final class RMCharacterCollectionViewCellViewModel{
     public let characterName: String
     private let characterStatus: RMCharacterStatus
     private let characterImageUrl: URL?
+    
+    
     init (
         characterName: String,
         characterStatus: RMCharacterStatus,
@@ -24,7 +26,7 @@ final class RMCharacterCollectionViewCellViewModel{
     }
     
     public var characterStatusText: String {
-        return characterStatus.rawValue
+        return "Status: \(characterStatus.text)"
     }
     
     public func fetchImage(completion: @escaping(Result<Data, Error>) -> Void){
@@ -40,7 +42,8 @@ final class RMCharacterCollectionViewCellViewModel{
                 completion(.failure(error ?? URLError(.badServerResponse)))
                 return
             }
-
+            
+            
             completion(.success(data))
         }
         
