@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		276A0A6E2ABF7746001376E6 /* RMImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276A0A6D2ABF7746001376E6 /* RMImageLoader.swift */; };
 		2788569E2AB3B6B100D82099 /* RMCharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2788569D2AB3B6B100D82099 /* RMCharacterCollectionViewCell.swift */; };
 		278856A02AB3B98500D82099 /* RMCharacterCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2788569F2AB3B98500D82099 /* RMCharacterCollectionViewCellViewModel.swift */; };
 		278856A42AB4D9B600D82099 /* RMCharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278856A32AB4D9B600D82099 /* RMCharacterDetailViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		276A0A6D2ABF7746001376E6 /* RMImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMImageLoader.swift; sourceTree = "<group>"; };
 		2788569D2AB3B6B100D82099 /* RMCharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 		2788569F2AB3B98500D82099 /* RMCharacterCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		278856A32AB4D9B600D82099 /* RMCharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterDetailViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 		279AE3AC2AAEA1CE00974E05 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				276A0A6D2ABF7746001376E6 /* RMImageLoader.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				279AE3982AAE81F500974E05 /* RMTabBarController.swift in Sources */,
 				2788569E2AB3B6B100D82099 /* RMCharacterCollectionViewCell.swift in Sources */,
 				279AE3BA2AAEA40E00974E05 /* RMEpisodeViewController.swift in Sources */,
+				276A0A6E2ABF7746001376E6 /* RMImageLoader.swift in Sources */,
 				27DA60F42AB34473009C7F7D /* RMCharacterListViewViewModel.swift in Sources */,
 				279AE3942AAE81F500974E05 /* AppDelegate.swift in Sources */,
 				279AE3962AAE81F500974E05 /* SceneDelegate.swift in Sources */,

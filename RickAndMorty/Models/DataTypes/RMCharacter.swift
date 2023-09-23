@@ -20,6 +20,11 @@ struct RMCharacter: Codable {
     let episode: [String]
     let url: String
     let created: String
+    
+    
+//    var characterStatus: RMCharacterStatus {
+//           return RMCharacterStatus(rawValue: status) ?? .unknown
+//       }
 }
 
 
