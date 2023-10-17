@@ -23,24 +23,36 @@ final class RMCharacterListViewViewModel: NSObject{
     private var isLoadingMoreCharacters = false
 
 
-    private var characters: [RMCharacter] = []{
-        didSet{
+//    private var characters: [RMCharacter] = []{
+//        didSet{
+//            for character in characters {
+//                let viewModel = RMCharacterCollectionViewCellViewModel(
+//                    characterName: character.name,
+//                    characterStatus: RMCharacterStatus(rawValue: character.status)!,
+//                    characterImageUrl: URL(string: character.image)
+//
+//                )
+//                if !cellViewModels.contains(viewModel){
+//                    cellViewModels.append(viewModel)
+//                }
+//            }
+//        }
+//    }
+//
+    private var characters: [RMCharacter] = [] {
+        didSet {
             for character in characters {
                 let viewModel = RMCharacterCollectionViewCellViewModel(
                     characterName: character.name,
-                    characterStatus: RMCharacterStatus(rawValue: character.status)!,
+                    characterStatus: RMCharacterStatus(rawValue: character.status.rawValue) ?? .other,
                     characterImageUrl: URL(string: character.image)
-
                 )
-                if !cellViewModels.contains(viewModel){
+                if !cellViewModels.contains(viewModel) {
                     cellViewModels.append(viewModel)
                 }
             }
         }
     }
-
- 
-
 
     private var cellViewModels: [RMCharacterCollectionViewCellViewModel] = []
 
@@ -91,7 +103,7 @@ final class RMCharacterListViewViewModel: NSObject{
 
                 let originalCount = strongSelf.characters.count
                 let newCount = moreResults.count
-                let total = originalCount+newCount
+                let total = originalCount + newCount
                 let startingIndex = total - newCount
                 
                 let indexPathsToAdd: [IndexPath] = Array(startingIndex..<(startingIndex+newCount)).compactMap({
